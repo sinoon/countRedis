@@ -1,12 +1,14 @@
+# Fork From node_ranaly
+
 # Ranaly - a node.js ranaly client
 [![Build Status](https://travis-ci.org/luin/node_ranaly.png?branch=master)](https://travis-ci.org/luin/node_ranaly)
 
 Ranaly可以非常简单地统计项目中的各种数据，本项目是ranaly的node.js客户端。想要了解更多关于ranaly的介绍请访问[ranaly项目主页](https://github.com/luin/ranaly)。
 
 ## 安装
-
-	npm install node_ranaly
-
+```
+npm install node_ranaly
+```
 ## 使用方法
 首先加载ranaly库：
 	
