@@ -4,7 +4,7 @@ exports.createClient = function ( port, host, auth, prefix ) {
     switch ( arguments.length ) {
         case 0 :
             exports.redisClient = redis.createClient( 6379, '127.0.0.1' );
-            exports.prefix = 'Ranaly:';
+            exports.prefix = 'count:';
             break;
         case 1 :
             if ( typeof port === 'object' ) {
@@ -12,7 +12,7 @@ exports.createClient = function ( port, host, auth, prefix ) {
             } else {
                 exports.redisClient = redis.createClient( port, '127.0.0.1' );
             }
-            exports.prefix = 'Ranaly:';
+            exports.prefix = 'count:';
             break;
         case 2 :
             if ( typeof port === 'object' ) {
@@ -20,7 +20,7 @@ exports.createClient = function ( port, host, auth, prefix ) {
                 prefix = host;
             } else {
                 exports.redisClient = redis.createClient( port, host );
-                exports.prefix = 'Ranaly:';
+                exports.prefix = 'count:';
             }
             break;
         case 3 :
@@ -34,7 +34,7 @@ exports.createClient = function ( port, host, auth, prefix ) {
                     return redis;
                 } )
             };
-            exports.prefix = 'Ranaly:';
+            exports.prefix = 'count:';
             break;
         case 4 :
             exports.redisClient = function () {
