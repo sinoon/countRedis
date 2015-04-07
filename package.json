@@ -1,6 +1,6 @@
 {
-  "name": "countRedis",
-  "version": "0.1.0",
+  "name": "countredis",
+  "version": "0.1.2",
   "description": "Count On Redis Keys",
   "keywords": ["count"],
   "author": "sinoon",

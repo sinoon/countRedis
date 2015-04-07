@@ -47,7 +47,7 @@ exports.createClient = function ( port, host, auth, prefix ) {
                     return redis;
                 } )
             };
-            exports.prefix = 'Ranaly:';
+            exports.prefix = prefix+':';
             break;
         default :
             throw new Error('Arguments is Wrong ! Please Check You Arguments Fellow Doc');
