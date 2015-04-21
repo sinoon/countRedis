@@ -17,7 +17,7 @@ exports.createClient = function ( port, host, auth, prefix ) {
         case 2 :
             if ( typeof port === 'object' ) {
                 exports.redisClient = port;
-                prefix = host;
+                exports.prefix = host;
             } else {
                 exports.redisClient = redis.createClient( port, host );
                 exports.prefix = 'count:';
